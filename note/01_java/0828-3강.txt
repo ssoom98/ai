@@ -1,0 +1,23 @@
+0828-3강
+1. 반복문(form while, do~while)
+반복적으로 수행하도록 하는 동작
+
+for문; 미리 설정된 횟수만큼 반복적으로 수행
+		for(초기값; 반복할조건; 증감식)
+			반복할 명령문들;
+블록내의 break문 활용 ; 
+break문을 만나면 swtich문에서와 동일하게 반복문의 블럭을 빠져나옴
+
+블록 내에서의 continue문 활용 ; continue를 만나면 반복문 위로 무조건 올라가 진행한다.
+
+while문 : for문과 동일하게 반복문의 일종이고, 조건이 만족될 때까지 반복적으로 수행
+
+①
+you - computer
+	0: 비김
+	1, -2 : you win
+	2, -1 : computer win
+
+②
+(you+2)%3 == computer : you win
+(you+1)%3 == computer : computer win
