@@ -1,0 +1,11 @@
+0902_6강
+1.Method
+메소드란? 작업을 수행하기 위한 명령문의 집합
+어떤 값을 입력받아서 처리하고 그 결과를 돌려준다(입력 받는 값이 없을 수도 있고 결과를 돌려주지 않을 수도 있다.)
+메소드의 장점과 작성지침 ; 반복적으로 수행되는 여러 문장을 메소드로 작성한다.
+
+Class= data와 method의 집합
+
+public class Arithmetic{}=class
+
+Arithmetic ar = new Arithmetic();//만든 변수= 객체
