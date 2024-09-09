@@ -1,0 +1,9 @@
+1. String에 사용할 method들:
+length(), indexOf(), lastIndexOf(), substring(), toUpeerCase(),toLowerCase(),trim()
+replace(), replaceAll(), equals()
+ex:
+2.날짜형들: Date(),Calendar(Calendar.getInstance()이용해서 생성), GregorianCalendar
+	SimpleDateFormat으로 원하는 방법으로 출력
+3.수학관련: Math.round()(소수점 한자리 두자리에서 반올림), 난수 발생(Math.random()이용, Random이용)
+4.Object: toString(), equals()재정의
+5.Wrapper 클래스: 기초데이터를 객체로 변형시키는 타입
