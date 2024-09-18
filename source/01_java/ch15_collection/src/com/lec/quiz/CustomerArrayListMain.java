@@ -13,11 +13,14 @@ public class CustomerArrayListMain {
 			answer = scanner.next();
 			if(answer.equalsIgnoreCase("y")) {
 				Customer newCustomer = new Customer();
+				
 				System.out.print("이름은?");
 				newCustomer.setName(scanner.next());
+				
 				System.out.print("전화 ?");
 				newCustomer.setTel(scanner.next());
 				scanner.nextLine(); // 버퍼 지우기
+				
 				System.out.print("주소?");
 				newCustomer.setAddress(scanner.nextLine());
 				customers.add(newCustomer);
