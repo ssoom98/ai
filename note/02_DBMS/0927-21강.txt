@@ -1,0 +1,52 @@
+0927-21강
+--VIEW- 단순뷰- 제한적인 조건 복합뷰 행을 제거뭐시기 인라인뷰- 프럼절 탑엔구문 문법
+ 
+--INDEX를 사용하는 경우
+1. 테이블에 행의 수가 많을때
+2.WHERE 문에 해당 컬럼이 많이 사용될 때
+3. 검색결과가 전체 데이터의 2%~4%정도일때
+4.JOIN에 자주사용되는 컬럼이나 NULL을 포함하는 컬럼이 많은경우
+--INDEX를 사용하지말아야하는 경우
+1.테이블에 행의 수가 적을 때
+2.WHERE 문에 해당 컬럼이 자주 사용되지 않을 때
+3.검색 결과가 전체 데이터의 10%~15% 이상 일 때
+4.테이블에 DML 작업이 많은 경우 즉, 입력 수정 삭제
+등이 자주 일어 날 때
+
+
+
+
+--TRANSACTION 명령어 :
+COMMIT (트랜젝션 반영),
+ROLLBACK(트랜젝션 취소),
+SAVEPOINT(트랜젝션 분할)
+
+----------------------트랜잭션 시작
+SELECT * FROM DEPT01; -- 10,20,30,40
+DELETE FROM DEPT01 WHERE DEPTNO=10;
+ROLLBACK;
+---------------------트랜잭션 시작
+SELECT * FROM DEPT01;
+DELETE FROM DEPT01 WHERE DEPTNO=40;
+COMMIT;
+---------------------트랜잭션 시작
+SELECT * FROM DEPT01;
+DELETE FROM DEPT01 WHERE DEPTNO=30;
+SAVEPOINT C1; --★ C1 시점 10,20
+
+SELECT * FROM DEPT01;
+DELETE FROM DEPT01 WHERE DEPTNO=20;
+SAVEPOINT C2; --★ C2 시점 10
+
+
+SELECT * FROM DEPT01;
+DELETE FROM DEPT01 WHERE DEPTNO=10;
+
+SELECT * FROM DEPT01;
+
+ROLLBACK TO C2;
+SELECT * FROM DEPT01;
+
+ROLLBACK TO C1;
+SELECT * FROM DEPT01;
+COMMIT;
