@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    닉네임 : <input type="text" name="nickname"/>
+    <!-- form 태그 밖의 input은 파라미터 전달 불가.-->
+    <!-- method(action 파일로 파라미터값 전달하는 방식)의 기본값이 get방식
+        action url?uid=aaa&upw=1111
+        -->
+    <!-- post방식은 파라미터 내용이 url에 전달안됩. 길이의 제한이 없음-->
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td>아이디</td><td><input type="text" name="uid" /></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td><td><input type="password" name="upw" /></td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" value="로그인" /></th>
+            </tr>
+        </table>
+       
+        
+    </form>
+</body>
+</html>
