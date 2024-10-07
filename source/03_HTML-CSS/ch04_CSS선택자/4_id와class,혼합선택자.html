@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{border:1px solid #cccccc; text-align:center;}
+        div#header{ /*id선택자는 #을 class 선택자는 .을 이름 앞에 붙임*/
+                    width:600px; margin:0 auto;
+                    background-color:lightyellow;
+                   
+        }
+        #wrap {
+            width: 600px;
+            margin: 0 auto;
+            background-color:aqua;
+            overflow:hidden; /*부모단에 overflow:hidden*/
+        }
+        #wrap #content{
+            float:left;
+            width:348px; /* #content = width(350px) + border(1+1=2px) = 352px*/
+            height:250px;
+
+        }
+        #wrap #banner {
+            float:left;
+            width:248px; /* #banner = width(248px) +border(2px) = 250px*/
+            height:300px;
+        }
+        #wrap #content .odd{
+            font-size:1.5em;
+            font-weight:bold;
+        }
+        #wrap #content .menu2, #wrap #content .menu4{
+            font-size:1.2em;
+            color:blue;
+        }
+        #wrap #banner img{width:150px;}
+        #footer{
+            clear:both;
+            width:600px; margin:0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+    <div id="wrap">
+        <div id="content">
+            <h3>
+            </h3>
+            <ul>
+                <li class="menu1 odd">menu1</li>
+                <li class="menu2">menu2</li>
+                <li class="menu3 odd">menu3</li>
+                <li class="menu4">menu4</li>
+                <li class="menu5 odd">menu5</li>
+            </ul>
+        </div>
+        <div id="banner">
+            <h3>BANNER</h3>
+            <img src="https://search3.kakaocdn.net/argon/229x0_80_wr/6VoFE03g1YB"alt="다음로고"/>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{/*전체 선택자= 페이지의 모든태그(전체페이지의 디자인을 초기화 용도)*/
+          margin:0 0 0 0;/*밖여백*/
+          padding:0;/*안여백*/
+         color:saddlebrown;
+        }
+        header,nav,section,footer{
+          width:500px;/*width를 지정하지 않으면 부모태그의 width를 다 씀*/
+          /*가로사이즈(width)*/
+          margin:2px auto;
+          border:1px solid gray;
+        }
+        nav ul{/*수평으로 하고픈 태그의 부모단*/
+          overflow:hidden;
+        }
+        nav ul li{/* block 타입의 태그를 */
+          float:left;
+          list-style:none;
+          padding:10px 27.5px;/*안여백*/
+          border:1px solid blue;
+        }
+        section{/*더이상 수평으로 안 할 영역*/
+          clear:both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>00주식회사</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>회사소개</li>
+            <li>서비스소개</li>
+            <li>고객센터</li>
+            <li>공지사항</li>
+        </ul>
+    </nav>
+    <section>
+        <p>
+            이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다. 대법원과 각급법원의 조직은 법률로 정한다.
+
+            정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다. 법률이 헌법에 위반되는 여부가 재판의 전제가 된 경우에는 법원은 헌법재판소에 제청하여 그 심판에 의하여 재판한다.
+        </p>
+    </section>
+    <footer>
+        <p>서울시 땡땡구 뭐뭐로 12, 201호(아무동,xx빌딩)</p>
+    </footer>
+</body>
+</html>
