@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap{
+            width:750px; margin:0 auto;
+
+        }
+        #header{
+            text-align:center;
+            border-bottom:1px solid lightgray;
+
+        }
+        #content{
+            padding:0 10px;
+            text-align:justify;
+            border-bottom:1px solid lightgray;
+        }
+        #content p:nth-child(2):first-line,
+        #content p:nth-child(3):first-line{
+            color:blue;
+            font-weight:bold;
+            font-size:20px;
+        }
+            #content p:nth-child(2):first-letter,
+            #content p:nth-child(3)>span{
+                font-size:2em;
+            }
+            #content p:nth-child(2)::selection{
+                background-color:violet;
+                color:yellow;
+            }
+            footer ul{overflow:hidden;}
+            #footer ul li{
+                float:left;
+                list-style:none;
+            }
+            #footer ul li:first-child{
+                margin:20px 10px 20px 30px
+            }
+            #footer ul li:first-child{
+                margin: 10px 20px 20px 10px;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>제모깅나 회사명</h1>
+        </div>
+        <div id="content">
+            <p>아무글씨1</p>
+            <p><span>각</span>급 선거관리위원회의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다. 정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.</p>
+            <p><span>각</span>급 선거관리위원회의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다. 정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다.</p>
+
+        </div>
+        <div id="footer">
+            <ul>
+                <li><img src="ch04/logo.png" alt="회사로고" /></li>
+                <li><img src="ch04/address.png" alt="회사정보" /></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
