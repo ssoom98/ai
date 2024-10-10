@@ -1,0 +1,39 @@
+0930
+
+MySQL
+
+-- date_format(날짜/시간, 포맷) => 날짜/시간형을 문자형으로 변환
+-- date_format(문자, 포맷) => 문자를 날짜/시간형으로 변환
+	-- 포맷 : %Y(년도4자리), %y(년도 2자리)
+    --       %m(01,02,..), %c(1,2,..)
+    --       %d(01,02,..), %e(1, 2,..)
+    --       %W monday, %a Mon
+    --       %H(24시) %h(12시), %p(오전, 오후), %i(분) %s(초)
+-- format(숫자, 소숫점자리수) -- 소수점자리수까지 출력하고 세자리마다 ,
+select format(pay, 0) from personal;-- 세자리 마다 ,
+select format(pay, 2) from personal;-- 세자리 마다
+
+-- ★ ★ ★ TOP-N 구문(rownum이 없고, limit이용)
+select pname, pay from personal order by pay desc limit 0, 5; -- 0번째부터 5개(1~5등)
+-- limit n == limit 0, n(1~n등까지)
+-- limit n1, n2 (n1번째부터 n2개, 첫번째는 0번째)
+
+
+JDBC
+자바 패키지의 일부로 자바 프로그램이 데이터 베이스와 연결되어 데이터를 주고 받을 수 있게 해 주는 프로그래밍 인터페이스이다. 자바 데이터베이스 프로그래밍 API라고 할 수 있다.
+조회
+	Statement stmt = conn.createStatement();
+	String str = “SELECT * FROM EMP;
+	ResultSet rs= stmt.excuteQuery(str);
+	rs.next() : 현재행에서 한행 앞으로 이동
+	rs.previouse() : 현재행에서 한행 뒤로 이동
+	rs.first() : 현재 행에서 첫번재 행의 위치로 이동
+	rs.last() : 현재 행에서 마지막 행의 위치로 이동
+	rs.cloase() stmt.close() conn.close()
+
+Insert	
+	Stmt.excuteQuery(sql)
+	검색(Select)시 사용 반환값이 ResultSet
+	Stmt.excuteUpdate(sql)
+	입력, 수정, 삭제(insert, update, delete)시 사용. 반환값이 정수형을 반환. 작업에 성공한 횟수 리턴하여 DML명령어(insert, update, delete)가 제대로 수행되었는지 체크할 수 있다
+
