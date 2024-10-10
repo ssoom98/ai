@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+      
+    </title>
+    <style>
+        #wrap{width:600px; margin:0 auto; border:1px solid gray;
+              text-align:justify; padding:10px;
+        }
+        #wrap p:nth-child(2n){background-color:lightpink;}
+        #wrap p:nth-child(1){font-size:100%;}/* 문자의 경우 원래사이즈의 몇&
+            width,height, padding, margin.... 등의 경우 : 부모태그 사이의 몇%
+        */
+        #wrap p:nth-child(2){
+            font-size: 24px; /*문자, width,height, padding,margin..*/
+        }
+        #wrap p:nth-child(3){
+            font-size:24pt; /*문자 3pt == 문자 4px*/
+        }
+        #wrap p:nth-child(4){
+            font-size:2.5em; /*원래 사이즈의 2.5배(40px)(기본 사이즈에서 환산:pxtoem.com.au)*/
+        }
+        #wrap>p>span{
+            display:block; /* span 태그의 display속성이 inline*/
+            color:gray;
+            font-size:.5em;/*원래 사이즈의 0.5배*/
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p>
+            대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 헌법재판소는 법관의 자격을 가진 9인의 재판관으로 구성하며, 재판관은 대통령이 임명한다.
+            <span>2024.10.10 09:40 입력</span>
+        </p>
+        <p>
+            대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 헌법재판소는 법관의 자격을 가진 9인의 재판관으로 구성하며, 재판관은 대통령이 임명한다.
+            <span>2024.10.10 09:40 입력</span>
+        </p>
+        <p>
+            대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 헌법재판소는 법관의 자격을 가진 9인의 재판관으로 구성하며, 재판관은 대통령이 임명한다.
+            <span>2024.10.10 09:40 입력</span>
+        </p>
+        <p>
+            대통령은 취임에 즈음하여 다음의 선서를 한다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 헌법재판소는 법관의 자격을 가진 9인의 재판관으로 구성하며, 재판관은 대통령이 임명한다.
+            <span>2024.10.10 09:40 입력</span>
+        </p>
+    </div>
+</body>
+</html>

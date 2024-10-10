@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{padding:0; margin:0;}
+        ul li{
+            display:inline-block;
+            width:100px; height:100px; background-color:red;
+            list-style:none;
+        }
+        ul li:nth-child(1){opacity:1; /*디폴트(불투명)*/}
+        ul li:nth-child(2){opacity:.5;/*opacity 속성: 0~1,0(완전투명)*/}
+        ul li:nth-child(3){opacity:.2;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>우리 나라 만세</li><!--엔터시 스페이스공간 생김-->
+        <li>우리 나라 만세</li>
+        <li>우리 나라 만세</li>
+    </ul>
+</body>
+</html>

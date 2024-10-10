@@ -1,0 +1,58 @@
+﻿#contain {
+    border: 1px solid lightgray;
+    text-align: center;
+   
+    width:700px; margin:0 auto;
+}
+
+li{list-style:none;}
+#nav li{text-align:center;}
+a {
+    width: 100px; height:50px;
+    text-decoration: none;
+    color: mediumpurple;
+    background-color: lightcoral;
+    display: block;
+    float:left;
+    margin:5px 5px 5px 5px;
+    line-height:50px;
+    text-align:center;
+}
+#header,#footer{
+    background-color:yellow;
+    
+    border: 1px solid gray;
+    
+
+}
+#header,#footer{
+    width:698px ; height:100px;
+    text-align:center;
+    line-height:100px;
+}
+#section{overflow:hidden;
+         border: 1px solid gray;
+}
+
+#section>#content{
+    width:70%; height:300px;
+    border:1px solid gray;
+    margin:5px 5px 5px 5px;
+    float:left;
+   
+}
+#section>#banner{
+    width:27%; height:300px;
+    border:1px solid gray;
+    margin:5px 5px 0 0;
+    float:right;
+   
+}
+
+
+
+#section {
+    width: 680px;
+    height: 320px;
+    margin:5px 5px 5px 5px
+}
