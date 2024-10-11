@@ -1,16 +1,19 @@
 ﻿#contain {
+    margin:0; padding:0;
     border: 1px solid lightgray;
     text-align: center;
-   
-    width:700px; margin:0 auto;
+   position:relative;
+    width:800px ; margin:0 auto;
 }
 
 #nav li {
     list-style: none;
 }
-#nav li{text-align:center;}
+#nav ul{
+    width:800px; margin:0 auto;
+}
 #nav ul li {
-    width: 110px; height:50px;
+    width: 110px;height:50px;
     text-decoration:none;
     color: mediumpurple;
     background-color: lightcoral;
@@ -18,53 +21,82 @@
     float:left;
     margin:5px 5px 5px 5px;
     line-height:50px;
-    text-align:center;
-
 }
 li a {
     text-decoration: none;
+    color: mediumpurple;
 }
-#nav ul li:first-child{border-radius: 20px 0 0 20px ;}
-#nav ul li:last-child{border-radius: 0 20px 20px 0;}
-#header,#footer{
-    background-color:yellow;
-    
-    border: 1px solid gray;
-    
+#nav>ul>li:first-child{border-radius: 20px 0 0 20px ;}
+#nav>ul>li:last-child{border-radius: 0 20px 20px 0;}
 
-}
-#header,#footer{
-    width:690px ; height:100px;
-    text-align:center;
-    line-height:100px;
+
+#header, #footer {
+    width: 98%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
     margin: 5px 5px 5px 5px;
+    background-color: yellow;
+    border: 1px solid gray;
+    padding: 3px 3px 3px 3px;
+    box-sizing:border-box;
 }
 #section {
     overflow: hidden;
     border: 1px solid gray;
     box-sizing: border-box;
     margin: 5px 5px 5px 5px;
+    width:98%
+
 }
 
-#section>#content{
-    width:70%; height:300px;
-    border:1px solid gray;
-    margin:5px 5px 5px 5px;
-    float:left;
-   
+#section > #content {
+    width: 70%;
+    height: 300px;
+    border: 1px solid gray;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    box-sizing: border-box;
 }
-#section>#banner{
-    width:27%; height:300px;
-    border:1px solid gray;
-    margin:5px 5px 0 0;
-    float:right;
-   
+#section > #banner {
+    width: 27%;
+    height: 300px;
+    border: 1px solid gray;
+    margin: 5px 5px 0 0;
+    float: right;
+    box-sizing: border-box;
 }
 
 
 #nav {
-    width: 98.5%;
-    height: 150px;
+    width: 98%;
+    height: 150px ;
     margin: 5px 5px 5px 5px;
     border: 1px solid gray;
+}
+#background_image{
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0; padding:0;
+    width:100%;
+    height:120%;
+    background:url('ch05/sulhyun.jpg') no-repeat;
+    background-size:100%;
+    z-index:-999;
+    opacity:0.3;
+}
+/****서브메뉴****/
+#nav{
+    height:100px auto;
+    position:relative;
+    z-index:9999;
+}
+.submenu{display:none;}
+#nav ul li:hover .submenu{
+    display:block;
+}
+#nav ol {
+    padding: 0;
+    margin: 0;
 }

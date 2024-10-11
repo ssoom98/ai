@@ -1,0 +1,53 @@
+﻿/****content****/
+#content {
+    width: 1000px;
+    margin: 0 auto;
+}
+    /* * * content .section1* * */
+    #content .section1 {
+        overflow: hidden;
+        /*height: 400px;*/
+    }
+
+        #content .section1 > div {
+            border: 1px solid gray;
+            box-sizing: border-box;
+            float: left;
+            height: 400px;
+            line-height: 400px;
+            text-align: center; /*글씨 가운데*/
+        }
+
+        #content .section1 .slide_banner {
+            width: 700px;
+        }
+
+        #content .section1 .side_banner {
+            width: 300px;
+        }
+
+    /* * * * content .section2 * * * */
+    #content .section2 .hit_product {
+        margin: 10px 0;
+    }
+
+    #content .section2 .hit_product,
+    #content .section2 .md_product {
+        border: 1px solid gray;
+    }
+
+        #content .section2 .hit_product ul,
+        #content .section2 .md_product ul {
+            overflow: hidden;
+        }
+
+            #content .section2 .hit_product ul li,
+            #content .section2 .md_product ul li {
+                border: 1px solid gray;
+                box-sizing: border-box;
+                float: left;
+                height: 400px;
+                width: 24%;
+                margin-left: 0.8%;
+            }
+    
