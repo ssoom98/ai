@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+          user-scalable=yes, maximum-scale=2.0, minmum-scale=0.7" />
+    <title></title>
+    <style>
+        /* * * * 페이지 초기화 * * * */
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none; display:block;}
+        /* * * * header * * * */
+        header{background-color:orange;}
+        /* * * * header의 #logo_wrap * * * */
+        header #logo_wrap{
+            height: 50px; line-height:50px; text-align:center;
+            position:relative;/* 자식태그가 부모태그 안에 두기 위한 용도*/
+        }
+        header #logo_wrap img.menu{
+            position:absolute; top:0; left:10px;
+        }
+        header #logo_wrap img.myinfo{
+            position:absolute; top:0; left:10px;
+        }
+        header #logo_wrap a {color:white; font-size:1.5em;font-weight:bold;}
+        /* * * * header의 #search * * * */
+        header #search{
+            position:relative;
+        }
+        header #search input[type='text']{
+            width:100%; height:50px;
+            border: 3px solid #ea8f00;
+            box-sizing:border-box;
+            outline:3px solid #ea8f00;
+            padding: 10px 60px 10px 10px;
+        }
+        header #search input[type='submit']{
+            background:url('ch07/search.png');
+            width:50px; height:50px;
+            border:0; outline:0;
+            position:absolute;
+            right:0; top:0;
+        }
+        /* * * * lnb * * * */
+        #lnb ul{
+            overflow:hidden;
+            margin:7px 0; /* 위 아래만 밖여백*/
+        }
+        #lnb ul li{
+            float:left;
+            width:16.66%;
+            text-align:center; height:30px; line-height:30px;
+            border-right:1px solid #ea8f00;
+            box-sizing:border-box;
+        }
+        #lnb ul li::after last-child{border:0;}
+        /* * * * #section1 * * * */
+        section #section1 .row1,
+        section #section1 .row2,
+        section #section1 .row3{
+            overflow:hidden;
+        }
+            section #section1 .row1 > div,
+            section #section1 .row2 > div,
+            section #section1 .row3 > div {
+                float:left; width:50%; height:120px;
+                border:2px solid white;
+                box-sizing:border-box;
+            }
+            section #section1 img{
+                width:100%; height:100%;
+            }
+        /* * * * #section2 * * * */
+        section #section2{ margin:7px 0;}
+            section #section2 ul li a {
+                border: 1px solid #cccccc;
+                padding: 8px;
+                box-sizing:border-box;
+                /*말줄임태그(한줄 이상의 데이터에서 한줄만 출력되고 뒷부분엔...)*/
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+
+        /* * * * #section3 * * * */
+        section #section3 ul li {
+            border:1px solid gray;
+            box-sizing:border-box;
+            margin:7px;
+            padding:7px;
+            position:relative;
+            height:120px;
+        }
+        section #section3 ul ng-pluralize p.img{
+            position:absolute;
+            left:10px; top:10px;
+        }
+        section #section3 ul ng-pluralize p.txt{
+            padding-left:120px;
+        }
+        section #section3 p.txt span:first-child{
+            display:block;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-weight:bold;
+            font-size:1.2em;
+            color:darkblue;
+        }
+        /**** footer ****/
+        footer{
+            background-color:#ea8f00;
+            text-align:center;
+        }
+        footer p:last-child{
+            padding:0 0 10px 0;
+            font-size:0.8em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo_wrap">
+            <img class="menu" src="ch07/menu.png" alt="메뉴 아이콘" />
+            <a class="logo" href="ex.html">mobile</a>
+            <img class="myinfo" src="ch07/myinfo.jpg" alt="내정보아이콘" />
+        </div>
+        <div id="search">
+            <form action="#">
+                <input type="text" name="query_word" />
+                <input type="submit" value="" />
+            </form>
+        </div>
+    </header>
+    <div id="lnb">
+        <ul>
+            <li><a href="#">lnb1</a></li>
+            <li><a href="#">lnb2</a></li>
+            <li><a href="#">lnb3</a></li>
+            <li><a href="#">lnb4</a></li>
+            <li><a href="#">lnb5</a></li>
+            <li><a href="#">lnb6</a></li>
+
+        </ul>
+    </div>
+    <section>
+        <div id="section1">
+            <div class="row1">
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980561?rc=N&ntype=RANKING">
+                       <img src="https://imgnews.pstatic.net/image/001/2024/10/14/PYH2024101120770004200_P4_20241014063913292.jpg?type=w860"alt="1행1열" /></a>
+                </div>
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980842?rc=N&ntype=RANKING">
+                       <img src="https://imgnews.pstatic.net/image/001/2024/10/14/PYH2024101020980001300_P4_20241014093711544.jpg?type=w860" alt="1행2열" /></a>
+                </div>
+
+            </div>
+            <div class="row2">
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980561?rc=N&ntype=RANKING">
+                        <img src="https://imgnews.pstatic.net/image/001/2024/10/14/PYH2024101120770004200_P4_20241014063913292.jpg?type=w860" alt="2행1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980842?rc=N&ntype=RANKING">
+                        <img src="https://imgnews.pstatic.net/image/001/2024/10/14/PYH2024101020980001300_P4_20241014093711544.jpg?type=w860" alt="2행2열" />
+                    </a>
+                </div>
+            </div>
+            <div class="row3">
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980561?rc=N&ntype=RANKING">
+                        <img src="https://imgnews.pstatic.net/image/001/2024/10/14/PYH2024101120770004200_P4_20241014063913292.jpg?type=w860" alt="1행1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980842?rc=N&ntype=RANKING">
+                        <img src="https://imgnews.pstatic.net/image/001/2024/10/14/PYH2024101020980001300_P4_20241014093711544.jpg?type=w860" alt="1행2열" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <ul>
+                <li>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980842?rc=N&ntype=RANKING">
+                        '두문불출' 한강, 17일 포니정 시상식 참석할까…첫 행보에 초미관심
+                    </a>
+                </li>
+                <li>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980842?rc=N&ntype=RANKING">
+                        '두문불출' 한강, 17일 포니정 시상식 참석할까…첫 행보에 초미관심'두문불출' 한강, 17일 포니정 시상식 참석할까…첫 행보에 초미관심'두문불출' 한강, 17일 포니정 시상식 참석할까…첫 행보에 초미관심
+                    </a>
+                </li>
+                <li>
+                    <a href="https://n.news.naver.com/mnews/article/001/0014980842?rc=N&ntype=RANKING">
+                        '두문불출' 한강, 17일 포니정 시상식 참석할까…첫 행보에 초미관심
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div id="section3">
+            <ul>
+                <li>
+                    <p class="img"><img src="ch07/100img.png" /></p>
+                    <p class="txt">
+                        <span>첫번째 span 내용은 말줄임을 할 예정입니다. block타입으로 전환할 예정입니다</span>
+                        <span>두번째 span 내용은 말줄임 안 할 예정입니다. 한줄이상의 내용은 다음줄로</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img"><img src="ch07/100img.png" /></p>
+                    <p class="txt">
+                        <span>첫번째 span 내용은 말줄임을 할 예정입니다. block타입으로 전환할 예정입니다</span>
+                        <span>두번째 span 내용은 말줄임 안 할 예정입니다. 한줄이상의 내용은 다음줄로</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p class="img"><img src="ch07/logo.png" /></p>
+        <p>서울시 강남구 개포로 12222222</p>
+
+    </footer>
+
+    
+</body>
+</html>

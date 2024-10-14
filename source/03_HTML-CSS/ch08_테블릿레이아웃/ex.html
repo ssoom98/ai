@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none; font-weight: bold;columns: white;}
+        /* * * #top_bar * * */
+        #top_bar{
+            height: 100px; line-height: 100px ; text-align: center;
+            background-color:#FFD800;
+            position: fixed;
+            top: 0; left: 0;right: 0;
+        }
+        #top_bar ul{
+            overflow: hidden;
+        }
+        #top_bar ul li{
+            float: left;
+            width: 16.66%;
+            border-right: 1px dotted gray;
+            box-sizing: border-box;
+            font-size: 1.5em;
+        }
+        /* * * #left_bar * * */
+        #left_bar{
+            width: 200px; text-align: center;
+            background-color: saddlebrown;
+            position: fixed;
+            left: 0; top: 100px;bottom: 100px;
+        }
+        #left_bar ul li a{
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid gray;
+        }
+        /* * * #right_bar * * */
+        #right_bar{
+            width: 200px; text-align: center;
+            background-color: lightyellow;
+            position: fixed;
+            right: 0; top: 100px;bottom: 100px;}
+        
+        #right_bar img{width: 150px;}    
+          /* * * #bottom_bar * * */
+        
+        #bottom_bar{
+            height: 100px; line-height: 100px ; text-align: center;
+            background-color:#f8e88c;
+            position: fixed;
+            bottom: 0; left: 0;right: 0;
+        }
+          /* * * content * * */
+        #content{
+            padding: 110px 210px 110px 210px;
+            text-align: justify;
+
+        }
+        #content img{float: left; margin-right: 10px;}
+        
+        
+    </style>
+</head>
+<body>
+    <div id="top_bar">
+        <ul>
+            <li><a href="#m">GNB1</a></li><!--shift alt 화살표키-->
+            <li><a href="#m">GNB2</a></li>
+            <li><a href="#m">GNB3</a></li>
+            <li><a href="#m">GNB4</a></li>
+            <li><a href="#m">GNB5</a></li>
+            <li><a href="#m">GNB6</a></li>
+        </ul>
+    </div>
+    <div id="left_bar">
+        <ul>
+            <li><a href="#m">LNB01</a></li>
+            <li><a href="#m">LNB02</a></li>
+            <li><a href="#m">LNB03</a></li>
+            <li><a href="#m">LNB04</a></li>
+            <li><a href="#m">LNB05</a></li>
+            <li><a href="#m">LNB06</a></li>
+            <li><a href="#m">LNB07</a></li>
+            <li><a href="#m">LNB08</a></li>
+            <li><a href="#m">LNB09</a></li>
+            <li><a href="#m">LNB10</a></li>
+        </ul>
+    </div>
+    <div id="right_bar">
+        <ul>
+            <li>
+                <a href="http://www.daum.net">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-daum-285192.png?f=webp"
+                            alt="다음">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.google.com">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968863.png"
+                            alt="구글">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.daum.net">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-daum-285192.png?f=webp"
+                            alt="다음">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="bottom_bar">
+        <p>Copyrigth joeun System corp.,ALL RIGHT RESERVED.</p>
+    </div>
+    <div id="content">
+        <img src="100img.png" alt="더미이미지">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+
+
+    </div>
+</body>
+</html>
