@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+        var arr=[273, 32, '홍길동'];
+        document.write('<h3>1. 일반 for문</h3>');
+        for(idx=0; idx<arr.length; idx++){
+            document.write(idx + '번째 :'+arr[idx]+'<br>');
+        }
+        document.write('<h3>2. for-in문(object,array에서 모두 사용)</h3>');
+        for(var idx in arr){
+            document.write(idx + '번째 :'+arr[idx]+'<br>');
+        }
+        document.write('<h3>3. for-of문(자바에서의 확장for문과 비슷)</h3>');
+        for(var data of arr){
+            document.write(data+'<br>');
+        }
+        document.write('<h3>4. forEach함수1 (array)</h3>');
+        // 배열명 : arr
+        // 데이터 : 273, 32, '홍길동'
+        // dlseprtm : 0,1,2
+        arr.forEach(function(item,idx){
+            document.write(idx+'번째 :' +data+'<br>');
+        });
+    
+        
+        document.write('<h3>5. forEach함수2 (array)</h3>');
+        arr.forEach(function(data){
+            document.write(data+'<br>');
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

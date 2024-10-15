@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <style>
+    p,h3{text-align: center;}
+    fieldset{
+        width: 300px; margin: 0 auto;
+    }
+    </style>
+    <script>
+    function chk(){
+        //frm.su1.value, frm.su2.value에 수를 입력했는지 검사
+        // 첫번째 수와 두번째 수의 차이를 계산해서 msg 생성
+        // message를 body끝과 alert창에 출력
+        // frm.su1.value = 첫번째 입력한 수
+        // frm.su2. value = 두번째 입력한 수 
+        //이와 같은 방식이 된다면 9가 10보다 더 크다고 나오기 때문에 number로 형변환하고 진행
+        if(frm.su1.value>frm.su2.value){
+            alert('첫번째 수가 '+ (frm.su1.value-frm.su2.value)+'만큼 큽니다' );
+            frm.su1.focus();
+            var msg="<h3>첫번째 수가 "+(frm.su1.value-frm.su2.value)+"만큼 큽니다</h3>";
+            document.body.innerHTML +=msg;
+            
+
+
+        }else if(frm.su2.value>frm.su1.value){
+            alert('두번째 수가 ' + (frm.su2.value-frm.su1.value)+'만큼 큽니다');
+            frm.su2.focus();
+            var msg="<h3>두번째 수가 "+(frm.su2.value-frm.su1.value)+"만큼 큽니다</h3>";
+            document.body.innerHTML +=msg;
+            
+
+        }else if(!frm.su1.value || !frm.su2.value){
+            alert('수를 입력하세요');
+        }else{
+            alert('수가 같습니다.')
+        }
+
+        return false;
+    }    
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <form name="frm" onsubmit="return chk()">
+            <p>
+                <label for="su1">첫번째 수</label>
+                <input type="number" name="su1" id="su1">
+            </p>
+            <p>
+               <label for="su2" >두번째 수</label>
+               <input type="number" name="su2" id="su2">
+            </p>
+            <p>
+                <input type="submit" value="결과" >
+            </p>
+            
+        </form> 
+        
+    </fieldset>
+</body>
+</html>

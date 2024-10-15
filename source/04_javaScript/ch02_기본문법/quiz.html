@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+        // 사용자로부터 국어 , 영어점수 입력받아 국, 영, 평균을 출력
+        let kor, eng;
+        do{
+            korscore=prompt('국어 점수를 입력하세요','0~100');
+            kor= Number(korscore);
+            
+           
+        }while(!korscore.trim()||isNaN(korscore)||kor<0||kor>100);
+        do{
+           eng=parseInt(prompt('영어 점수를 입력하세요','0~100'));
+           
+        }while(isNaN(eng) ||eng<0||eng>100);
+        document.write('국어 점수는'+kor+'<br>');
+        document.write('영어 점수는'+eng+'<br>');
+        document.write('평균은 : '+((kor+eng)/2));
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
