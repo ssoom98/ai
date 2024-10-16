@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+        let cnt=0; //누적 횟수
+        let right =0;// 점수를 제대로 입력한 횟수
+        let wrong =0;// 점수를 잘못 입력한 횟수("","    ","a", 0보다 작거나 100보다 큰 값)
+        let sum=0;
+        // 반복문을 이용해서 누적을 원할때까지 누적할 점수를 입력받는다
+        // cnt, right, wrong, sum출력
+        while(confirm("누적할래?")){
+            cnt++;
+            scoreStr=prompt("몇점?");
+            score = Number(scoreStr);
+            if(!scoreStr || !scoreStr.trim() || isNaN(score) || score<0 || score>100){
+                wrong++;
+
+            }else{
+                sum += score;
+                right++;
+            }
+            document.write(cnt + '번입력<br>');
+            document.write('제대로 입력한 횟수: '+ right + ' <br>');
+            document.write('잘못 입력한 횟수: '+ wrong + ' <br>');
+            document.write('누적점수: '+ sum + ' <br>');
+            
+        }
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

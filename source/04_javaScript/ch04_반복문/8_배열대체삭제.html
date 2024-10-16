@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+        let arr =['가0','라','나2','라','다4','라','마6','라'];
+        let copyArr = arr.slice(0,arr.length);
+        // splice(idx, cnt) : 배열에 idx번째부터 cnt개 제거 (배열이 수정)
+        // splice(idx, cnt, 대체값) : 배열에 idx번째부터 cnt개 제거하고 그 부분에 대체값을 대체
+        // copyArr.splice(3,2, '대체값');
+        // copyArr의 0~끝까지 '라' 인덱스를 찾아 copyArr.splice(인덱스,1)
+        for(let idx=0; idx<copyArr.length; idx++){
+            if(copyArr[idx] == '라'){
+                copyArr.splice(idx,1); // idx번째 값 1개 제거
+                idx--;
+            }
+        }
+        document.write('arr : '+ arr + '<br>');
+        
+        document.write('copayArr : ' + copyArr + '<br>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
