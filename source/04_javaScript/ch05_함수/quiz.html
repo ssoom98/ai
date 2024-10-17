@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style>
+        body{
+            background-size: 100%;
+        }
+    </style>
+    <script>
+        let sec = 0;
+        let img = ['url(ch05_img/img01.png)','url(ch05_img/img02.png)','url(ch05_img/img03.png)'];
+        var col = ['#FFFF00','#000000','#FFFFFF'];
+        let id = setInterval(()=>{
+            document.body.innerHTML = new Date();
+            document.body.style.color=col[sec%3];
+            document.body.style.backgroundImage=img[sec%3];
+            sec ++;
+        },1000);
+        setTimeout(()=>{
+            clearInterval(id);
+
+        },10000);
+            
+            
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

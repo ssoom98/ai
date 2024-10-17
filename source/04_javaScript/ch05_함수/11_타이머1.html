@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+        var id = setTimeout(()=>{
+                alert('3초지났다');
+        },3000);
+        var cnt =0;
+        let nowMilliSec = new Date().getTime();
+        while(new Date().getTime() < nowMilliSec+2000){
+            cnt++;
+        }
+        clearTimeout(id);
+        document.write('2초동안' + cnt + '번 while문 수행함')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

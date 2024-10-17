@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+        //경고창 : 3->3->3 => 0->1->2
+        //방법 1. i를 지역변수로: let
+        for(let i=0; i<3; i++){
+            setTimeout(()=>{
+                alert(i);
+            },0);
+        }
+        //방법 2. 자기호출함수를 이용
+        for(var i=0; i<3; i++){
+            (function(a){
+                setTimeout(()=>alert(a,0));
+            })(i);     
+        }
+        //방법 3 : 배열이용
+        [5,6,9].forEach((data,idx)=>{
+            setTimeout(()=> alert(data),0);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
