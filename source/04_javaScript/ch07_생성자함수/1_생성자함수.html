@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+        function Student(name, kor, mat,eng,sci){ //this가 들어가있으면 생성자 함수
+            this.name = name;
+            this.kor=kor;
+            this.eng=eng;
+            this.mat=mat;
+            this.sci=sci;
+            this.getSum=function(){
+                return this.kor + this.mat+this.eng+this.sci;
+            };
+            this.getAvg=function(){
+                return this.getSum()/4;
+            };
+            this.toString=function(){
+                var output = ' ';
+                for(let key in this){
+                    if(key!='getSum' && key!='getAvg' && key!='toString'){
+                        output+=key +':'+ this[key]+' ';
+                    }else if(key=="getSum"){
+                        output += key.substring(3)+ ':' + this[key]() + ' ';
+                    }else if(key == 'getAvg'){
+                        output += key.substring(3) + ':' + this[key]() + '\n';
+                    }
+                }
+                return output;
+            };
+            
+        }
+        let s = new Student("홍",100,100,100,100);
+
+        let s1 = new Student("박",100,100,99,99);
+
+
+        let students =[new Student("김김김",90,49,22,34),
+                        new Student("김김김",90,49,22,34),
+                        new Student("김김김",90,49,22,34),
+                        new Student("김김김",90,49,22,34),
+                        new Student("김김김",90,49,22,34),
+        ];
+        students.push(new Student("김김김",90,49,22,34));
+        students.forEach((item, i)=>{
+            document.write(i + '번째' + item + '<br>');
+        });
+        students.pop();
+        students.pop();
+        students.pop();
+        document.write('<h3>pop 후</p>');
+        students.forEach(item=> document.write(item+'<br>'));
+        //속성부여후 데이터 추가 가능
+        //속성 제거 가능
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
