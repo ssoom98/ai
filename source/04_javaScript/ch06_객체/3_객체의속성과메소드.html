@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+   
+    <script>
+        let name = '홍길동';
+        let fun = function(){};
+        let person ={
+            name:'홍길동',
+            age:22, //따옴표쳐도되고 안쳐도되고
+            eat:function(food){// 객체내 메소드에서는 this키워드를 생략불가 작성을 하지 않는다면 외부객체(브라우저객체)를 사용함- 9장
+                let msg = this.age + ' 살 '+ this.name +' 님은 ' + food+'을 먹습니다';
+                alert(msg);
+            },
+        };
+        document.write(person['name']+'<br>');  //따옴표쳐야하고
+        person.eat("맛있는 점심");
+        document.write(person);// sysout(person)
+        document.write(person.toString());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
