@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style>
+        
+    </style>
+    <script>
+        var str = 'abc@abc@abc'
+        document.write('원본 :' + str + '<br>');
+        document.write('문자 길이 :'+ str.length + '<br>');
+        document.write('문자 연결 :'+ str.concat(str) + '<br>');
+        // substring(a,b) : a번째부터 b번째 앞까지 추출
+        // substring(a,b) : a번째부터 끝까지 추출
+        // substr(a,b) : a번째부터 문자b개를 추출
+        document.write('3~6번째 앞까지 : '+ str.substring(3,6) + '<br>');
+        document.write('3번째부터6개 :'+ str.substr(3,6)+ '<br>');
+        document.write('@idx(앞):' + str.indexOf('@') + '<br>');
+        document.write('@idx(뒤):' + str.lastIndexOf('@') + '<br>');
+        str = 'hong@hong.com';
+        document.write('trim():' + str.trim()+ '<br>');
+        document.write('replace :' + str.replace(' ','') + '<br>');
+        document.write('replaceAll : ' + str.replaceAll(' ', '')+ '<br>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
