@@ -1,0 +1,10 @@
+<jsp동작원리>
+브라우저에서http://localhost:8090/ch02_semiJSP/ex1_hello.jsp
+
+-소스폴더
+최수민/source--
+
+-실행폴더
+최수민/ide wtp --
+-jsp파일을 서블릿 파일로 바꾸는 작업(컴파일 가능한 java)
+최수민/ide work --
