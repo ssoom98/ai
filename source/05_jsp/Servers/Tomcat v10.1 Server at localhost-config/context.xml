@@ -26,7 +26,7 @@
     <!--
     <Manager pathname="SESSIONS.ser" />
     -->
-    <Resource 
+<Resource 
 		auth="Container"
 		driverClassName = "oracle.jdbc.driver.OracleDriver"
 		url = "jdbc:oracle:thin:@localhost:1521:xe"
@@ -37,5 +37,4 @@
 		maxActive = "10"
 		maxWait = "1000"
 	/>
-    
 </Context>
