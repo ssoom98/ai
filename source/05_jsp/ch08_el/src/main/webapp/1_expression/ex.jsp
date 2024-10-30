@@ -18,7 +18,7 @@
 	<p>조건연산 <%=(1>2) ? "1이 더 큽니다" : "2가 더 큽니다" %></p>
 	<p>name 파라미터값 : <%=request.getParameter("name") %></p>
 	<p>name 파라미터 여부 <%=request.getParameter("name")==null? "안받음": "받음" %>
-	<p>name 파라미터 대문자로 <%=request.getParameter("name").toUpperCase() %>  
+	<%-- <p>name 파라미터 대문자로 <%=request.getParameter("name").toUpperCase() %>   --%>
 	
 	<h2>el표기법(표현식안에 쓸 수 있는 연산자는 다 사용 가능)</h2>
 	<p>산술연산 ${10+1}</p>
