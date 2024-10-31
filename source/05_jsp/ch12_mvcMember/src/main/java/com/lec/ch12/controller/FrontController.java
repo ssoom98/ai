@@ -28,10 +28,8 @@ public class FrontController extends HttpServlet {
 				service = new MemberListService();
 				service.execute(request, response);
 				viewPage = "member/memberList.jsp";
-			}else if(command.equals("/memberJoinView.do")) {
-				viewPage= "member/memberJoin.jsp";
 			}else if(command.equals("/memberJoin.do")) {
-				service = new MemberJoinService();
+				viewPage= "member/memberJoin.jsp";
 			}
 			RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 			dispatcher.forward(request, response);
@@ -39,7 +37,22 @@ public class FrontController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		String uri = request.getRequestURI(); // "/ch12_mvcMember/memberList.do"
+		String conPath = request.getContextPath(); // "/ch12_mvcMember"
+		String command = uri.substring(conPath.length());//"/memberList.do"
+		Service	service = null;
+		String viewPage= null;
+		if(command.equals("/memberJoin.do")) {
+			service = new MemberJoinService();
+			service.execute(request, response);
+			viewPage = "memberList.do";
+		}else if(command.equals("/memberList.do")) {
+			service = new MemberListService();
+			service.execute(request, response);
+			viewPage = "member/memberList.jsp";
+		}
+		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
+		dispatcher.forward(request, response);
 	}
 
 }

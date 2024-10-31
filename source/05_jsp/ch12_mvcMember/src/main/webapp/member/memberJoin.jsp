@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 	<link href="${conPath}/css/ex.css" rel="stylesheet" >
-	<script src="${conPath }memberInfo.js"></script>
+	<script src="${conPath }/js/memberInfo.js"></script>
 </head>
 <body>
 	<form action="${conPath }/memberJoin.do" method="post">

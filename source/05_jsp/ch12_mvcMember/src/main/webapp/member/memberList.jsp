@@ -12,6 +12,28 @@
 
 </head>
 <body>
+	<!-- 가입후 리스트 페이지로 올경우 가입 메세지 (insertResult,insertMsg,memberExistentMsg) 출력 -->
+	<c:if test="${not empty insertMsg }">
+		<script>
+			alert('${insertMsg}');
+		</script>
+	</c:if>
+	<c:if test="${not empty memberExistentMsg}">
+		<script>
+			alert('${memberExistentMsg}');
+			/* history.back(); */
+			history.go(-1);
+		</script>
+	</c:if>
+	<c:set var="SUCCESS" value="1"/>
+	<c:set var="FAIL" value="0"/>
+	<c:if test="${insertResult eq SUCCESS }">
+		<script>alert('1방법.가입성공');</script>
+	</c:if>
+	<c:if test="${insertResult eq FAIL }">
+		<script>alert('1방법.가입실패');</script>
+	</c:if>
+	
 	<table>
 		<tr>
 			<th>순번</th>
@@ -40,12 +62,14 @@
 				<td><fmt:formatDate value="${member.rdate}"
 						pattern="yy-MM-dd(E) hh:mm(a)" /></td>
 			</tr>
-			<c:set var="no" value="${no+1 }"/><!-- 순번을 출력할 no변수를 재선언 -->
+			<c:set var="no" value="${no+1 }" />
+			<!-- 순번을 출력할 no변수를 재선언 -->
 		</c:forEach>
 	</table>
-		<p><button onclick="location.href='${conPath}/memberJoinView.do'">회원가입</button>
-			<button onclick="location.href='${conPath}/'">프로젝트 실행</button>
-		</p>
-		
+	<p>
+		<button onclick="location.href='${conPath}/memberJoin.do'">회원가입</button>
+		<button onclick="location.href='${conPath}/'">프로젝트 실행</button>
+	</p>
+
 </body>
 </html>
