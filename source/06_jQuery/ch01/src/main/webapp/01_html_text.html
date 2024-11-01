@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//jQuery 문번:$('선택자').함수();
+		$('p#p1').click(function(){
+		//'p#p1'를 클릭이벤트 발생시 구현
+		//$(this).html('<b>태그내용바뀜<b>');
+		$(this).text('<b>태그가 적용되면서 내용바뀜<b>');
+			$(this).css('background-color','yellow').css('color','red');
+			});
+	});
+</script>
+</head>
+<body>
+	<p id="p1">p태그 하나</p>
+</body>
+</html>

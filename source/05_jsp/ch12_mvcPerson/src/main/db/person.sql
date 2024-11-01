@@ -1,4 +1,4 @@
---person테이블 삭제및 시퀀스 제거
+    --person테이블 삭제및 시퀀스 제거
 drop table person;
 DROP SEQUENCE PERSON_ID_SEQ;
 

@@ -15,3 +15,4 @@
 	<%response.sendRedirect("list.do"); %>
 </body>
 </html>
+<!-- 마지막페이지가 삭제되지 않거나 사라지지않으면 dao에서 클로즈하거나 db에서 commit이 되었는지 확인 -->
