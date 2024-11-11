@@ -1,0 +1,19 @@
+자바스크립트 개요 - 동적인 페이지 구현을 위함.
+변수 생성시 - var(변수 재선언 가능) , let(변수 재선언 불가), const, const arr, arr[0]
+1.va타입 : undefined -값 undefined
+2.va타입 : string -값 Name is hong
+3.va타입 : number -값 -12346.2
+4.va타입 : boolean -값 true
+5.va타입 : function -값 function(){ alert('함수'); }
+6.va타입 : object -값 1,2,3
+7.va타입 : object -값 [object Object]
+복합 대입 연산자(+= -= *= /= %=), 증감연산자
+alert - 경고 메세지를 표출하기 위한 대화상자
+confirm-  사용자의 확인을 받기 위한 대화상자
+prompt - 사용자로 내용을 입력받을 수 있는 대화상자를 표시
+Number(ob) - 다른 자료형을 숫자로 바꿀 때. 일반문자열을 숫자로 표시할 수 없지만 강제로 숫자자료형으로 바꿨을 시 NaN으로 출력.
+parseInt(string, [진수])와 parseFloat(string) - 문자열을 정수와 실수로 변경. 문자열 타입의 숫자만 가능
+String(ob) - 다른 자료형을 문자열로 바꿀 때
+isNaN(숫자) - 주어진 데이터가 숫자면 false리턴, 숫자가 아니면 true리턴
+Boolean() - Boolean 자료형으로 변환. 다음의 경우는 false로 변환. !!로 대신할 수 있다.
+document.write==은 양변의 값이 일치할 경우 true ,===은 양변의 자료형과 값이 일치할 경우 true

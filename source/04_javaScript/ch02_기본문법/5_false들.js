@@ -1,4 +1,6 @@
 //false로 해석되는 값 : 0, '', undefined, NaN, null
+
+
 var i;
 console.log(Boolean(i));
 console.log(Boolean(0));

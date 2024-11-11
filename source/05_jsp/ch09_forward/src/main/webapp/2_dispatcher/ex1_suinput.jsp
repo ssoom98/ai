@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!-- <form action="../ex1_suPro"> -->
-	<form action="<%=conPath %>/ex1_suPro">
+	<form action="<%=conPath %>/Ex1_suPro">
 		누적을 원하는 수
 		<input type="number" min="1" name="su" required="required">
 		<input type="submit" value="누적">

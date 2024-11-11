@@ -1,0 +1,15 @@
+CSS 속성
+
+1.CSS3 단위들: em, %, px, pt
+2.url()함수를 이용한 background-image, 로컬 폰트 지정 
+3.display : inline, block, inline-block, none
+4.visibility
+5.opacity
+6.margin과 padding
+7.box-sizing ; border를 box안으로
+8.border
+9.글자관련 속성; font-family, font-size, font-weight, font-style,
+                      line-height, text-align, text-decoration
+10.폰트(웹폰트, 로컬폰트, 시스템 폰트)
+11.position
+12.float

@@ -1,0 +1,13 @@
+1004 HTML
+
+HEAD영역 - 설정정보
+style(CSS) CSS선택자- 디자인 영역 속성:속성값
+script-동적인 부분 (JavaScript)
+body-웹문서에 출력될 정보
+
+태그- HTML을 구성하는 요소 열린태그와 닫힌태그
+태그이름, 태그 속성, 태그값
+글자관련 태그- p,h1 br a b i sup del
+목록태그 ul(순서x), ol(순서o), li
+표태그 table, 이미지 태그 img
+오디오 태그 audio

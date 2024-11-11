@@ -1,0 +1,21 @@
+조건문, switch문
+
+if문, if else문, 중첩 조건문, if else if 조건문, 
+
+switch문 {
+case 값: 
+	문장; break;
+case 값: 
+	문장; break;
+Default:
+	문장; break;
+}
+삼항 연산자
+	(불 표현식)? (참일 때 실행하는 문장) : (거짓일 때 실행하는 문장);
+
+배열
+var array = [222,444,5522,333,3333] *어떤 자료형도 배열 요소가 될 수 있다.
+배열 출력- for, for-in문(object,array에서 모두 사용), for-of문(자바에서의 확장for문과 비슷)
+		,forEach함수1 ( arr.forEach(function(item,idx)),
+		forEach함수2(arr.forEach(function(data))
+
