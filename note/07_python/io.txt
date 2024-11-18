@@ -1,0 +1,13 @@
+1절. text파일 io
+with open('filepath','모드',encoding='인코딩방식') as f:
+	list변수 = f.readlines()또는 f.writerows(list변수)
+2절. 피클을 이용한 파일 io (객체를 파일에 io)
+with open('filepath','wb|rb|ab') as f:
+	객체리스트 변수 = pickle.load(f)-read
+	pickle.dump(객체리스트변수,f)-write
+3절. csv 파일 io
+with open('파일경로', 'w|r|a', encoding='인코딩방식') as f:
+	reader = csv.reader(f)- csv 파일을 list 데이터로 read
+	writer = csv.writer(f) => writer.writerows(list데이터)-list데이터를 csv로 쓰기
+	dic_reader = csv.DictReader(f) - csv파일을 딕셔너리 데이터로 read
+	dic_wirter= csv.DictWriter(f,fieldnames) dic_writer.writeheader();dic_writer.writerrows(list)
