@@ -1,0 +1,7 @@
+기본 객체:
+String : 문자열을 다루기 위한 객체
+Date : 날짜와 시간을 처리하기 위한 객체
+Array : 배열을 만들어 주는 객체
+
+https://devdocs.io/javascript/
+https://www.w3schools.com/jsref

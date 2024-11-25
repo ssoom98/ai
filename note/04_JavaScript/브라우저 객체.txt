@@ -1,0 +1,8 @@
+브라우저 객체:
+웹 브라우저와 관련된 객체의 집합
+window객체- location, navigator, history, screen, document
+window.open()
+윈도 형태 옵션:
+height,width,location,menubar, resizeable, status, toolbar
+location객체:
+href,host,hostname,port,pathname,hash,search,protocol
