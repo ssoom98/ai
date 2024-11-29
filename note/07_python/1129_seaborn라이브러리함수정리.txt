@@ -1,0 +1,27 @@
+★★★ seaborn ★★★
+- 미적속성설정
+sns.set(style, context, palette, rc)
+
+- 그래프 함수
+① 관계형그래프
+   scatterplot, lineplot -> relplot(서브플롯)
+② 범주형그래프
+   stripplot, swarmplot, barplot, barhplot
+   countplot, pointplot, boxplot, violinplot
+   boxenplot => catplot(서브플롯)
+③ 쌍관계 그래프 : pairplot
+④ 밀도그래프
+   histplot, displot
+⑤ 회귀그래프
+    regplot => lmplot(서브플롯)
+
+- 다중그래프를 위한 FacetGrid
+
+
+
+
+
+
+
+
+
