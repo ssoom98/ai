@@ -1,0 +1,24 @@
+웹프로그래밍에서의 데이터베이스
+
+-데이터 베이스 연결 순서
+ ① JDBC 드라이버 로드 : DriverManager로드 :  Class.forName(“oracle.jdbc.driver.OracleDriver”); 메모리에 OracleDriver 가 로드된다.
+ ② 데이터 베이스 연결 : Connection :  DriverManager.getConnection(JDBC URL, 계정아이디, 비밀번호) :  connection 객체 생성
+ ③ SQL문 실행
+ i. connection.createStatement();Statement 객체를 통해 SQL문 실행
+ ii. ResultSet : statement.executeQuery(), statement.executeUpdate(); SQL 문의 결과값을 ResultSet객체로 받는다
+ ④ 데이터 베이스 연결 해제
+
+-Statement 객체
+	- executeQuery() ; SQL문 실행 후 여러 개의 결과값 생기는 경우 					사용 ex. Select
+	- executeUpdate();SQL문 실행 후 테이블의 내용만 변경되는 경우 					사용 ex. insert, delete, update
+	- executeQuery() 실행 후 반환되는 레코드 셋
+		첫번째 로우 데이터
+		두번째 로우 데이터
+		…
+		N번째 마지막 로우 데이터
+		END
+	- ResultSet.next(); 다음 레코드로 이동
+	- ResultSet.previous(); 이전 레코드로 이동
+	- ResultSet.first(); 처음 레코드로 이동
+	- ResultSet.last(); 마지막 레코드로 이동
+	- get메소드 : getString, getInt

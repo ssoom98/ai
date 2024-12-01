@@ -1,0 +1,23 @@
+EL(Expression Language)
+
+- 표현식(<%=~ %>) 를 조금 더 간략하게 대신해서 값을 표현하는 언어. 액션 태그를 조금 다르게(간략하게) 표현한 것
+- 표현식 (<%= value %> ) → EL 표기법(${ value })
+
+- EL 연산자 (EL 표기법 안에서 아래의 연산자를 사용할 수 있다)
+①	산술 : + - * / %
+②	관계 : ==(eq)  !=(ne) <(lt) >(gt) <= >=
+③	조건: a ? b : c 
+④	논리 && ||
+⑤	${ empty 값} 공백이거나 null일 때 true
+⑥	${not empty 값} 공백이거나 null이 아닐 때 true
+
+- 내장 객체
+ Scope에 관한 객체
+① requestScope : request객체의 attribute를 참조하는 객체(request attribute의 집합) Map 타입
+② sessionScope : session객체의 attribute를 참조하는 객체(session attribute의 집합) Map 타입
+- 그 외 유용한 객체
+①param : 요청 파라미터를 참조하는 객제(웹 브라우저로부터 입력된 데이터의 집합) Map 타입
+②paramValues : 요청 파라미터(배열)를 참조하는 객제(웹 브라우저로부터 입력된 데이터의 집합-똑 같은 이름의 데이터가 여럿일 때 사용) Map 타입
+
+- Getter를 대신하는 EL
+ <jsp:getProperty name="member" property="name"/>을 ${ member.name }으로 표현 가능

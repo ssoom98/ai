@@ -1,0 +1,18 @@
+#Servlet
+
+1.Servlet 작성
+	- 동적 웹어플리케이션 컴포넌트; JSP랑 같음
+	- java를 사용하여 웹프로그램 제작
+		Servlet(interface)-구현
+		GenericServlet(abstract)-상속
+		HttpServlet-상속
+		ServletClass
+	- 클라이언트의 요청에 동적으로 작동하고, 응답은 html을 이용
+	- java thread이용하여 동작 서버의 부하가 적다라는 것이 장점
+
+2.Servlet 파일생성
+3.어노테이션을 이용한 서블릿 맵핑
+4. Web.xml에서 서블릿 맵핑
+	-요청처리객체 및 응답처리객체를 톰캣에서 받음
+	Get방식 – URL값으로 정보가 전송되어 보안에 약함
+	Post방식 – header를 이용해 정보가 전송되어 보안에 강함

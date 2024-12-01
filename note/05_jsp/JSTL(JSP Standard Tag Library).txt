@@ -1,0 +1,8 @@
+JSTL(JSP Standard Tag Library)
+
+- 간단한 프로그램 로직의 구사(자바의 변수 선언, if문, for문 등에 해당하는 로직)
+- 다른 JSP 페이지 호출(<c:redirect>)
+- 날짜, 시간, 숫자의 포맷
+- JSP 페이지 하나를 가지고 여러 언어의 웹 페이지 생성
+
+https://jakarta.ee/specifications/tags/2.0/jakarta-tags-spec-2.0#c:out

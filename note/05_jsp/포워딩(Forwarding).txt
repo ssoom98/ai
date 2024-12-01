@@ -1,0 +1,11 @@
+포워딩(Forwarding)
+
+HttpServletResponse 클래스
+	- RequestDispatcher 클래스와 동일하게 요청을 위임하는 클래스.
+	- RequestDispatcher  클래스와 차이점은 요청 받은 요청객체를 위임 받은 컴포넌트에 전달 하는 것이 아닌, 새로운 요청객체를 생성
+
+RequestDispatcher 클래스  
+- 받은 요청을 내가 처리하지 않고 다른 쪽으로 위임해 버릴 때 그것을 포워드 한다고 한다. 그것을 JSP 서블릿에서는 두가지 클래스를 많이 이용
+- 서블릿 또는 JSP에서 요청을 받은 후 다른 콤포넌트로 요청을 위임 할 수 있다. 그리고 이러한 위임 방법에는 2개의 클래스를 이용 합니다.
+- 하나는 RequestDispatcher 클래스 이고, 또하나는 HttpServletResponse 클래스
+- RequestDispatcher클래스의 경우 요청 받은 요청객체(request)를 위임하는 컴표넌트에 동일하게 전달할 수 있다.
