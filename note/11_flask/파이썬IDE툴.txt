@@ -1,0 +1,10 @@
+- jupyter notebook 
+	데이터분석, DL이나 ML 모델을 구현
+- vscode ; Visual Studio code
+	장점: 가벼운 범용 개발 IDE(C, html, js, VC++, python)	
+	단점: 언어마다 설정 필요, 파이썬 인공지능 모델 실행시 약간의 버그
+
+- Pycharm ; jetbrain사 IDE
+	파이썬 전용 IDE 툴
+	프로젝트가 커지고 DL이나 ML 모델 구현시 버그 없음
+	디버깅, git연동, 스펠링 체크, 협업 용이
