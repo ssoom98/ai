@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+myenv/
+.idea/
+__pycache__/
+abc/
