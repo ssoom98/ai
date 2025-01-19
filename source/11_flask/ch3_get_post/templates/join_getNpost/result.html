@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="{{ url_for('static', filename='file.css') }}"
+        rel="stylesheet">
+  <title>Title</title>
+</head>
+<body>
+  <h1>{{ member.name }}님 join complete(POST)</h1>
+  <h2>아뒤 : {{ member.id }}</h2>
+  <h2>비번 : {{ member.pw | mask_pw}}</h2>
+  <h2>주소 : {{ member.addr }}</h2>
+  <form action="/welcome" method="post">
+    <p><input type="hidden" name="name" value="{{member.name}}"></p>
+    <p><input type="number" name="value" placeholder="value값"></p>
+    <p><input type="submit" value="전송"></p>
+  </form>
+</body>
+</html>

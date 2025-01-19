@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{ name }}님 반갑읍니다</h1>
+  <hr>
+  <img src="{{url_for('static', path='/img/hf.png')}}">
+  <img src="/static/img/hf.png">
+  <hr>
+  <form action="/html3" method="get">
+    <p><input type="hidden" name="name" value="{{ name }}"></p>
+    <p><input type="text" name="id" placeholder="아이디입력" required="required"></p>
+    <p><input type="password" name="pw" placeholder="비밀번호입력" required="required"></p>
+    <p>
+      <input type="submit" value="입력">
+      <input type="reset" value="초기화">
+    </p>
+  </form>
+{% endblock %}

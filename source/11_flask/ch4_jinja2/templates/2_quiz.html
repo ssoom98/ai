@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="{{url_for('static', filename='file.css')}}" rel="stylesheet">
+  <title>Title</title>
+</head>
+<body>
+  <h1>구구단을 외자</h1>
+  <h2>원하는 구구단을 입력하세요.</h2>
+  <form method="post">
+    <input type="text" name="no"
+           value="{% if no %}{{no}}{% endif %}">
+    <button type="submit">구구단 확인하기</button>
+  </form>
+  <div>
+      {% if no == None or no == '' %} <!--not no은 안 되네. |는 or가 아니고 필터 연산자임-->
+          <h2> 아직 구구단 수 입력 전 </h2>
+      {% else %}
+          <p>
+              {% for i in range(1, 10) %}
+                  {{no}} X {{i}} = {{ no | int * i }}<br>
+              {% endfor %}
+          </p>
+      {% endif %}
+  </div>
+</body>
+</html>
