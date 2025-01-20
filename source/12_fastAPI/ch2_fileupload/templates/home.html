@@ -6,7 +6,7 @@
       <div class="text-center container-fluid py-5">
         <h1 class="display-5 fw-bold">파일 업로드!</h1>
         <hr style="width:100%; color:red;">
-        <img src="{{ url_for('static', filename='img/upload.png')}}"
+        <img src="{{ url_for('static', path='img/upload.png')}}"
              width="100">
         <form action="/upload" method="post" enctype="multipart/form-data">
           <input type="file" name="file">
@@ -31,7 +31,10 @@
                 <td onclick="location.href='/download/{{ info['name'] }}'">
                   {{ info['name'] }}
                 </td>
-                <td><a href="/del/{{ info['name'] }}">삭제</a></td>
+                <td>
+<!--                <a href="/del/{{ info['name'] }}">삭제</a>-->
+                  <span data-id="{{info['name']}}">삭제</span>
+                </td>
                 <td>{{ info['create'].strftime('%Y-%m-%d %H:%M') }}</td>
                 <td>{{ info['modify'].strftime('%Y-%m-%d %H:%M') }}</td>
                 <td>{{ info['size'] }}</td>
@@ -44,5 +47,24 @@
       </table>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function(){
+      $('span').click(function(e){ // e: 클릭된 엘리먼트
+        // console.log(e);
+        filename = e.target.dataset.id;
+        //console.log(filename);
+        fetch('/del/'+filename, {method:'DELETE'})
+        //.then(function(response){});
+        .then(response=>{
+            return response.text(); // 서버의 응답 내용을 text로 return
+        })
+        .then(data=>{
+            alert(data);
+        });
+        location.reload();// 현재 페이지를 다시 load
+      });
+    });
+  </script>
 </body>
 {% endblock %}
