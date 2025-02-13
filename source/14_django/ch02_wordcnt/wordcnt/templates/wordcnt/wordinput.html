@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}단어 입력{% endblock %}
+
+{% block content %}
+  <h1 onclick="location='{% url 'index' %}'">글자수 및 단어수 세기(Welcomepage)</h1>
+  <a href="/wordcnt/about">ABOUT(도움말)</a>
+  <a href="{% url 'wordcnt:about' %}">ABOUT(도움말)</a>
+<!--  <form action="/wordcnt/result/" method="post">-->
+  <form action="{% url 'wordcnt:result' %}" method="get">
+    {#% csrf_token %#}
+    <textarea name="fulltxt" cols="40" rows="10"></textarea>
+    <input type="submit" value="계산결과">
+  </form>
+{% endblock %}

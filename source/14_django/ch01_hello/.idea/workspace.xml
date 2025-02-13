@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4354dc0f-e355-40ec-b9e5-8d813d44ba9c" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ch01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2ssH0EBBkyqOAFRs5eOXXAwKUjy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/ai/source/14_django/ch01_hello/home/static"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ai\source\14_django\ch01_hello\home\static" />
+      <recent name="D:\ai\source\14_django\ch01_hello" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="4354dc0f-e355-40ec-b9e5-8d813d44ba9c" name="변경" comment="" />
+      <created>1739237137128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739237137128</updated>
+    </task>
+    <servers />
+  </component>
+</project>
