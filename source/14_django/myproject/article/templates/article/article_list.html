@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}article List{% endblock %}
+
+{% block content %}
+ <h2>article List</h2>
+  {% for article in article_list %}
+    <li>
+       {{article.id}}.{{article.title}} / {{article.status}}
+        <a href="{% url 'article:detail' article.id %}">[상세]</a>
+        <a href="{% url 'article:edit' article.id %}">[수정]</a>
+        <a href="{% url 'article:delete' article.id %}">[삭제]</a>
+    </li>
+  {% empty %}
+     <p>기사 목록이 없습니다</p>
+  {% endfor %}
+  <a href="{% url 'article:new' %}">[article 추가]</a>
+{% endblock  %}

@@ -71,9 +71,15 @@ def pandas_excel_download(request):
   response['Content-Disposition'] = "attachment; filename={}".format(filename)
   return response
 
+from django.shortcuts import redirect
+def get_redirect1(request):
+  #return redirect('/blog') # 목록 페이지 경로
+  #return redirect('blog:index')  # 목록 페이지 경로 name
+  #return redirect('/blog/2')
+  return redirect('blog:detail', post_id=2)
 
-
-
+def get_redirect2(request):
+  return redirect('http://google.com')
 
 
 

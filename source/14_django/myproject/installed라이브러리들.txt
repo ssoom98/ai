@@ -1,0 +1,10 @@
+python -m pip install --upgrade pip
+pip install django
+장고 프로젝트 생성 : django-admin startproject 프로젝트명 .
+pip install ptyhon-decouple : key 숨기는 용도
+pip install django-extensions : shell_plus 사용 용도 => 앱(django_extensions)등록
+pip install pandas
+pip install openpyxl : 데이터프레임(버퍼)을 excel 다운로드 용도
+pip install pillow
+
+==> pip install -r requirements.txt

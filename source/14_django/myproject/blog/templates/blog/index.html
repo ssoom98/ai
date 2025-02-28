@@ -5,30 +5,32 @@
     <ul>
     {% for post in post_list %}
       <li>
-        <a href="/blog/{{post.id}}/">{{post.id}}.{{post.title}}</a>
+<!--        <a href="/blog/{{post.id}}/">{{post.id}}.{{post.title}}</a>-->
         <a href="{% url 'blog:detail' post.id %}">{{post.id}}.{{post.title}}</a>
+        [{{ post.comment_set.all | length}}개 댓글]
+        [{{post.tags.all | length}}개 태그]
       </li>
     {% endfor %}
     </ul>
   {% else %}
     <p>No posts are available.</p>
   {% endif %}
-  <button class="btn btn-primary" onclick="location='/blog/json'">
+  <button class="btn btn-primary" onclick="location='{% url 'blog:json' %}'">
     json보기
   </button>
-  <button class="btn btn-primary" onclick="location='/blog/excel'">
+  <button class="btn btn-primary" onclick="location='{% url 'blog:excel' %}'">
     excel다운로드
   </button>
-  <button class="btn btn-primary" onclick="location='/blog/csv'">
+  <button class="btn btn-primary" onclick="location='{% url 'blog:csv' %}'">
     csv다운로드
   </button>
-  <button class="btn btn-primary" onclick="location='/blog/csvexcel'">
+  <button class="btn btn-primary" onclick="location='{% url 'blog:csvexcel' %}'">
     csvexcel다운
   </button>
-  <button class="btn btn-primary" onclick="location='/blog/redirect1'">
+  <button class="btn btn-primary" onclick="location='{% url 'blog:redirect1' %}'">
     blog상세보기
   </button>
-  <button class="btn btn-primary" onclick="location='/blog/redirect2'">
+  <button class="btn btn-primary" onclick="location='{% url 'blog:redirect2' %}'">
     구글로가기
   </button>
 {% endblock %}

@@ -12,6 +12,8 @@ urlpatterns = [
   path("excel/",views.excel_download, name="excel"),
   path("csv/",  views.pandas_csv_download, name='csv'),
   path("csvexcel/", views.pandas_excel_download, name="csvexcel"),
+  path("redirect1/", views.get_redirect1, name="redirect1"),
+  path("redirect2/", views.get_redirect2, name="redirect2"),
 ]
 
 
