@@ -32,8 +32,8 @@ class Book(models.Model):
                                          self.sales,
                                          self.ip)
   def get_absolute_url(self):
-    return reverse('article:list')
-    # return reverse('article:edit', args=[self.id])
+    return reverse('book:list')
+    # return reverse('book:edit', args=[self.id])
 
   class Meta:
     ordering = ['-publication_date']

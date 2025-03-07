@@ -19,11 +19,12 @@ from django.urls import path, include
 from django.shortcuts import redirect
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", lambda r : redirect("article:list")),
+    path("", lambda r : redirect("blog:index")),
     path("blog/", include("blog.urls")),
-    path("article/", include("article.urls")),
+    path("book/", include("book.urls")),
     path("article/", include("article.urls")),
     # path("file/", include("filetest.urls")),
+    path("accounts/", include("accounts.urls")),
 ]
 # 사용자가 업로그한 파일(MEDIA_ROOT)을 url(MEDIA_URL)과 연결
 # 장고는 static은 자동 연결해 주나, media는 개발자가 연결

@@ -77,14 +77,3 @@ book_delete = DeleteView.as_view(model=Book,
 #     return render(request,
 #            'article/article_confirm_delete.html',
 #            {'object':article})
-
-
-
-
-
-
-
-
-
-
-

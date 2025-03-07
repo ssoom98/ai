@@ -4,6 +4,7 @@ from .models import Post
 
 def index(request):
   post_list = Post.objects.all()
+  print('로그인한 user_name :',request.user)
   # output = '<br>'.join([post.__str__() for post in post_list])
   # print(output)
   # return HttpResponse("<h1>Welcome Page</h1>" + output)
